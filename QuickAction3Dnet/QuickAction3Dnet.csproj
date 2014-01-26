@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5D2D902-6BCA-47AF-A2A8-D4A4933E6805}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>QuickAction3Dnet</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>QuickAction3Dnet</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="ActionItem.cs" />
+    <Compile Include="QuickAction.cs" />
+    <Compile Include="PopupWindows.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable\action_item_btn.xml" />
+    <AndroidResource Include="Resources\drawable\action_item_selected.9.png" />
+    <AndroidResource Include="Resources\drawable\arrow_down.png" />
+    <AndroidResource Include="Resources\drawable\arrow_up.png" />
+    <AndroidResource Include="Resources\drawable\popup.9.png" />
+    <AndroidResource Include="Resources\layout\action_item_horizontal.xml" />
+    <AndroidResource Include="Resources\layout\action_item_vertical.xml" />
+    <AndroidResource Include="Resources\layout\horiz_separator.xml" />
+    <AndroidResource Include="Resources\layout\popup_horizontal.xml" />
+    <AndroidResource Include="Resources\layout\popup_vertical.xml" />
+    <AndroidResource Include="Resources\anim\disappear.xml" />
+    <AndroidResource Include="Resources\anim\grow_from_bottom.xml" />
+    <AndroidResource Include="Resources\anim\grow_from_bottomleft_to_topright.xml" />
+    <AndroidResource Include="Resources\anim\grow_from_bottomright_to_topleft.xml" />
+    <AndroidResource Include="Resources\anim\grow_from_top.xml" />
+    <AndroidResource Include="Resources\anim\grow_from_topleft_to_bottomright.xml" />
+    <AndroidResource Include="Resources\anim\grow_from_topright_to_bottomleft.xml" />
+    <AndroidResource Include="Resources\anim\pump_bottom.xml" />
+    <AndroidResource Include="Resources\anim\pump_top.xml" />
+    <AndroidResource Include="Resources\anim\rail.xml" />
+    <AndroidResource Include="Resources\anim\shrink_from_bottom.xml" />
+    <AndroidResource Include="Resources\anim\shrink_from_bottomleft_to_topright.xml" />
+    <AndroidResource Include="Resources\anim\shrink_from_bottomright_to_topleft.xml" />
+    <AndroidResource Include="Resources\anim\shrink_from_top.xml" />
+    <AndroidResource Include="Resources\anim\shrink_from_topleft_to_bottomright.xml" />
+    <AndroidResource Include="Resources\anim\shrink_from_topright_to_bottomleft.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\layout\" />
+  </ItemGroup>
+</Project>
